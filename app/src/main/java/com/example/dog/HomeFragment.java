@@ -23,7 +23,7 @@ public class HomeFragment extends Fragment {
     String api="a94ad5f2407340a5a24e25c518bfc871";
     ArrayList<ModelClass> modelClassArrayList;
     Adapter adapter;
-    String country="in";
+    String country="fr";
     private RecyclerView recyclerViewofhome;
 
     @Nullable
@@ -51,6 +51,12 @@ public class HomeFragment extends Fragment {
         ApiUtilities.getApiInterface().getNews(country, 100,api).enqueue(new Callback<mainNews>() {
             @Override
             public void onResponse(Call<mainNews> call, Response<mainNews> response) {
+                if(response.isSuccessful())
+                {
+                    modelClassArrayList.addAll(response.body().getArticles());
+                    adapter.notifyDataSetChanged();
+                }
+
 
             }
 
@@ -59,5 +65,6 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
     }
 }
