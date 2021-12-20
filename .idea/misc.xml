@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout-v21/bastardfragment.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout-v21/fragment_music.xml" value="0.1" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout-v21/healthfragment.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout-v21/sciencefragment.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout-v21/sportsfragment.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout-v21/technologiefragment.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout/activity_oui2.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout/activity_ouiiii.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout/fragment_music.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout/fragment_news.xml" value="0.264" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout/homefragment.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Cleme/AndroidStudioProjects/Melyy/app/src/main/res/layout/layout_item.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable-v21/custom_input2.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable-v21/gradient.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable/bottom_navigation_colors.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable/custom_input.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable/custom_input2.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable/gradient.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable/thumb.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/drawable/volume_control.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/font/proxima.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/layout-v21/fragment_music.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/layout/activity_oui2.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/layout/activity_ouiiii.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/layout/fragment_music.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/nao2j/AndroidStudioProjects/dog/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.20520833333333333" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0640"
+    tools:context=".music_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, User !"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mix"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/gradient"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="65dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sounds"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/lune"
+                        android:padding="20dp"
+                        android:contentDescription="Moon"
+                        app:tint="@color/white" />
+
+                    <SeekBar
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20dp"
+                        android:progressTint="@color/white"
+                        android:progressBackgroundTint="@color/black"
+                        android:thumb="@drawable/thumb"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="20dp" />
+            </RelativeLayout>
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/fire"
+                        android:padding="20dp"
+                        android:paddingBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="Fire"
+                        app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:padding="20dp"
+                        app:tint="@color/white"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/drop"
+                        android:contentDescription="Drop" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/train"
+                        android:padding="20dp"
+                        android:contentDescription="Moon"
+                        app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/wind"
+                        android:padding="5dp"
+                        android:paddingBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="Fire"
+                        app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:padding="9dp"
+                        app:tint="@color/white"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cloud"
+                        android:contentDescription="Drop" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/lune"
+                        android:padding="20dp"
+                        android:contentDescription="Moon"
+                        app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/fire"
+                        android:padding="20dp"
+                        android:paddingBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="Fire"
+                        app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradient"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:padding="20dp"
+                        app:tint="@color/white"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/drop"
+                        android:contentDescription="Drop" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/custom_input"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/lune"
+                        android:padding="20dp"
+                        android:contentDescription="Moon"
+                        app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton11"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/custom_input"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/fire"
+                        android:padding="20dp"
+                        android:paddingBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="Fire"
+                        app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton12"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/custom_input"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:padding="20dp"
+                        app:tint="@color/white"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/drop"
+                        android:contentDescription="Drop" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>
