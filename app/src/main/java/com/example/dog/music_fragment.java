@@ -1,5 +1,8 @@
 package com.example.dog;
 
+import android.content.Context;
+import android.hardware.SensorManager;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -9,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +23,8 @@ public class music_fragment extends Fragment {
 
 
     ImageButton bt,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt10,bt11,bt12;
+    SeekBar mSeekBar;
+    AudioManager audioManager;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -69,15 +75,23 @@ public class music_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_music, container, false);
-
-
-
-
-
-
-
         View view = inflater.inflate(R.layout.fragment_music, container, false);
+
+
+        audioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
+
+        int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        int currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+
+        mSeekBar = (SeekBar) view.findViewById(R.id.seekbar);
+        mSeekBar.setMax(maxVolume);
+        mSeekBar.setProgress(currentVolume);
+
+
+
+
+
+
         final MediaPlayer mp = MediaPlayer.create (getContext(), R.raw.night);
         bt = (ImageButton) view.findViewById(R.id.imageButton1);
         final MediaPlayer mp2 = MediaPlayer.create (getContext(), R.raw.firecamp);
@@ -102,6 +116,24 @@ public class music_fragment extends Fragment {
         bt11 = (ImageButton) view.findViewById(R.id.imageButton11);
         final MediaPlayer mp12 = MediaPlayer.create (getContext(), R.raw.car);
         bt12 = (ImageButton) view.findViewById(R.id.imageButton12);
+
+
+        mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, i, 0);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
         bt.setOnClickListener(new View.OnClickListener() {
             @Override

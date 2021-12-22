@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ouiiii extends AppCompatActivity {
 
-    TextView guest;
+    TextView guest2;
     Button register2,login2,buttonult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +20,22 @@ public class ouiiii extends AppCompatActivity {
 
         register2 = findViewById(R.id.register2);
         login2 = findViewById(R.id.login2);
+        guest2 = findViewById(R.id.guest2);
 
 
 
+        guest2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ouiiii.this, oui2.class));
+            }
+        });
 
 
         register2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ouiiii.this, oui2.class));
+                startActivity(new Intent(ouiiii.this, registerpage.class));
             }
         });
 
@@ -36,7 +43,7 @@ public class ouiiii extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(ouiiii.this,oui2.class));
+                startActivity(new Intent(ouiiii.this, loginpage.class));
             }
         });
 
